@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Arg 87</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Voga&display=swap');
+
+        body {
+            font-family: 'Voga', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e6d5c3, #cbb49e);
+            color: #4e3b31;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #4e3b31;
+            color: #f3e9e0;
+            text-align: center;
+            padding: 50px 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .logo {
+            font-family: 'Voga', serif;
+            font-size: 4em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin: 0;
+            animation: expandContract 3s infinite;
+        }
+
+        @keyframes expandContract {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .product {
+            background-color: #f3e9e0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-bottom: 4px solid #cbb49e;
+        }
+
+        .product h3 {
+            font-family: 'Voga', serif;
+            margin: 15px 0;
+            font-size: 1.5em;
+            color: #4e3b31;
+        }
+
+        .product p {
+            font-size: 1.2em;
+            color: #7a5f4d;
+            margin: 10px 0 20px;
+        }
+
+        .product button {
+            background: linear-gradient(45deg, #7a5f4d, #4e3b31);
+            color: #f3e9e0;
+            border: none;
+            padding: 10px 25px;
+            cursor: pointer;
+            border-radius: 30px;
+            font-size: 1em;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .product button:hover {
+            background: linear-gradient(45deg, #4e3b31, #7a5f4d);
+            transform: scale(1.1);
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+            animation: fadeIn 0.3s ease;
+        }
+
+        .modal-content button {
+            margin: 10px;
+            padding: 10px 25px;
+            font-size: 1em;
+            border-radius: 30px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .modal-content button:first-child {
+            background: #4e3b31;
+            color: #fff;
+        }
+
+        .modal-content button:first-child:hover {
+            background: #7a5f4d;
+        }
+
+        .modal-content button:last-child {
+            background: #0078d7;
+            color: #fff;
+        }
+
+        .modal-content button:last-child:hover {
+            background: #005fa3;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Style Arg 87</div>
+        <p>Todos los talles disponibles</p>
+    </header>
+<body>
+    <header>
+        <div class="logo">Style Arg 87</div>
+        <p>Todos los talles disponibles</p>
+    </header>
+    <main>
+        <section class="products">
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2149826/8iyw.jpg" alt="overcize BASIC">
+                <h3>overcize BASIC</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize BASIC')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/5kyv.jpg" alt="overcize MFPSHIF BLACK AND WHITE">
+                <h3>overcize MFPSHIF BLACK AND WHITE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize MFPSHIF BLACK AND WHITE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2149826/1iyw.jpg" alt="overcize CENSURE REMEMBER">
+                <h3>overcize CENSURE REMEMBER</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize CENSURE REMEMBER')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/2kyv.jpg" alt="overcize REUZ WORLDWIDE">
+                <h3>overcize REUZ WORLDWIDE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize REUZ WORLDWIDE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/3kyv.jpg" alt="overcize REUZ BASIC">
+                <h3>overcize REUZ BASIC</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize REUZ BASIC')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2320070/1ivl_thumb.jpg" alt="overcize ARCHIVE WORLD">
+                <h3>overcize ARCHIVE WORLD</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize ARCHIVE WORLD')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2272078/1lyo.jpg" alt="overcize HEART ON FIRE">
+                <h3>overcize HEART ON FIRE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize HEART ON FIRE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2164303/9vxf.jpg" alt="overcize REPRESENT THE FLOW">
+                <h3>overcize REPRESENT THE FLOW</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize REPRESENT THE FLOW')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2150688/1hrm.jpg" alt="overcize 012 GREEN">
+                <h3>overcize 012 GREEN</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize 012 GREEN')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2166790/7kyv.jpg" alt="overcize MFPSHIF GREEN">
+                <h3>overcize MFPSHIF GREEN</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize MFPSHIF GREEN')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2150688/4hrm.jpg" alt="overcize 012 WHITE">
+                <h3>overcize 012 WHITE</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize 012 WHITE')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2320070/8xja.jpg" alt="overcize ARCHIVE GREY">
+                <h3>overcize ARCHIVE GREY</h3>
+                <p>$23,000</p>
+                <button onclick="comprarProducto('overcize ARCHIVE GREY')">Comprar</button>
+            </div>
+            <!-- Nuevos productos -->
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2489956/1aof.jpg" alt="Blac Kait">
+                <h3>Blac Kait</h3>
+                <p>$29,999</p>
+                <button onclick="comprarProducto('Blac Kait')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2489953/2qwd.jpg" alt="Legend">
+                <h3>Legend</h3>
+                <p>$29,999</p>
+                <button onclick="comprarProducto('Legend')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2489953/1qwd.jpg" alt="Acshock">
+                <h3>Acshock</h3>
+                <p>$29,999</p>
+                <button onclick="comprarProducto('Acshock')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2489953/3qwd.jpg" alt="Bers Efk">
+                <h3>Bers Efk</h3>
+                <p>$29,999</p>
+                <button onclick="comprarProducto('Bers Efk')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2321305/2olt.jpg" alt="Boxy Destiny 1">
+                <h3>Boxy Destiny 1</h3>
+                <p>$22,000</p>
+                <button onclick="comprarProducto('Boxy Destiny 1')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2321305/3olt.jpg" alt="Boxy Destiny 2">
+                <h3>Boxy Destiny 2</h3>
+                <p>$22,000</p>
+                <button onclick="comprarProducto('Boxy Destiny 2')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2468414/2zxh.jpg" alt="Boxy Essential 1">
+                <h3>Boxy Essential 1</h3>
+                <p>$22,000</p>
+                <button onclick="comprarProducto('Boxy Essential 1')">Comprar</button>
+            </div>
+            <div class="product">
+                <img src="https://img.avellanedaaltoque.com/productos/2468414/3zxh.jpg" alt="Boxy Essential 2">
+                <h3>Boxy Essential 2</h3>
+                <p>$22,000</p>
+                <button onclick="comprarProducto('Boxy Essential 2')">Comprar</button>
+            </div>
+            <!-- Agregar otros productos como se muestra arriba -->
+        </section>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p>Elige cómo deseas proceder:</p>
+            <button id="btnWhatsapp">Coordinar por WhatsApp</button>
+            <button id="btnMercadoPago">Pagar con Mercado Pago</button>
+            <button id="btnInstagram" class="instagram">Coordinar por Instagram</button>
+        </div>
+    </div>
+
+    <script>
+        let productoSeleccionado = "";
+
+        function comprarProducto(producto) {
+            productoSeleccionado = producto;
+            const modal = document.getElementById("modal");
+            modal.style.display = "flex";
+        }
+
+        document.getElementById("btnWhatsapp").addEventListener("click", () => {
+            const mensaje = `Hola, estoy interesado/a en el producto: ${productoSeleccionado}. ¿Está disponible?`;
+            const numeroWhatsapp = "5491132806407"; // Reemplaza con tu número de WhatsApp
+            window.location.href = `https://wa.me/${numeroWhatsapp}?text=${encodeURIComponent(mensaje)}`;
+        });
+
+        document.getElementById("btnMercadoPago").addEventListener("click", () => {
+            alert(
+                "Alias de Mercado Pago: Style1987.mp\n" +
+                "Recuerda verificar el monto antes de transferir.\n" +
+                "En el motivo de la transferencia, aclara el producto: " + productoSeleccionado + "."
+            );
+            document.getElementById("modal").style.display = "none";
+        });
+
+        document.getElementById("btnInstagram").addEventListener("click", () => {
+            const cuentaInstagram = "https://www.instagram.com/style.arg87/"; // Reemplaza con tu enlace de Instagram
+            window.location.href = cuentaInstagram;
+        });
+
+        window.onclick = function(event) {
+            const modal = document.getElementById("modal");
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>
